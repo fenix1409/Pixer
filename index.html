@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./images/pixerlogo.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Pixer</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header">
+                <a class="header__logo-link" href="/">
+                    <svg width="59" height="20" viewBox="0 0 59 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 19.5676V0.216198H6.70257C7.53798 0.210424 8.36748 0.356677 9.15054 0.647812C9.89243 0.921593 10.5756 1.33379 11.1637 1.86249C11.7612 2.4057 12.2363 3.06984 12.5574 3.81079C12.8785 4.55174 13.0383 5.35255 13.0262 6.16C13.0346 6.96286 12.873 7.75841 12.552 8.49435C12.231 9.23029 11.7578 9.88996 11.1637 10.43C10.5757 10.9589 9.89254 11.3711 9.15054 11.6447C8.36804 11.9359 7.53911 12.0824 6.70419 12.0771H3.05369V19.5635L0 19.5676ZM6.78355 9.16186C7.24674 9.17085 7.70681 9.08429 8.13507 8.90759C8.51251 8.74953 8.85304 8.51487 9.13515 8.21847C9.40158 7.93659 9.61231 7.60689 9.75626 7.24673C9.89699 6.90357 9.97039 6.53655 9.97247 6.16567C9.97004 5.39418 9.67012 4.65337 9.13515 4.09748C8.82929 3.78664 8.46334 3.54133 8.05961 3.37649C7.65587 3.21166 7.2228 3.13075 6.78678 3.1387H3.05369V9.1651L6.78355 9.16186Z" fill="currentColor"/>
+                        <path d="M15.4045 6.3244V19.5676H18.4047V6.3244H15.4045Z" fill="currentColor"/>
+                        <path d="M18.9109 2.02445C18.9153 2.28999 18.8662 2.5537 18.7665 2.79983C18.6667 3.04596 18.5183 3.26945 18.3303 3.45695C18.1479 3.64913 17.9274 3.80123 17.683 3.90356C17.4386 4.00589 17.1756 4.05622 16.9107 4.05133V-6.27426e-06C17.1756 -0.00469046 17.4386 0.0457264 17.6829 0.148046C17.9273 0.250366 18.1477 0.402356 18.3303 0.594374C18.5179 0.781671 18.666 1.00478 18.7658 1.25045C18.8655 1.49612 18.9149 1.75933 18.9109 2.02445Z" fill="currentColor"/>
+                        <path d="M16.9082 -3.17022e-06V4.05377C16.6399 4.05996 16.3732 4.01033 16.1251 3.90801C15.877 3.80569 15.6528 3.65292 15.4668 3.45939C15.2779 3.27192 15.1288 3.04814 15.0286 2.80154C14.9284 2.55493 14.8791 2.2906 14.8838 2.02445C14.88 1.75915 14.9296 1.49579 15.0298 1.25009C15.13 1.00439 15.2786 0.781388 15.4668 0.594377C15.653 0.401162 15.8772 0.248601 16.1253 0.146305C16.3734 0.0440089 16.64 -0.00580651 16.9082 -3.17022e-06Z" fill="currentColor"/>
+                        <path d="M24.9996 12.8375L20.4316 6.3244H23.9185L26.7827 10.5134H26.8637L29.536 6.3244H33.1574L28.5359 12.8375L33.2383 19.5676H29.6753L26.8103 15.2433H26.7293L23.8886 19.5676H20.3506L24.9996 12.8375Z" fill="currentColor"/>
+                        <path d="M46.837 16.4054C46.267 17.4441 45.4495 18.3261 44.4571 18.9732C43.4313 19.6588 42.1705 20.0016 40.6746 20.0016C39.7342 20.0115 38.8015 19.8322 37.9318 19.4745C37.1138 19.1368 36.3733 18.6356 35.7559 18.0015C35.1359 17.3602 34.649 16.6025 34.3234 15.7721C33.9729 14.8722 33.7986 13.9133 33.81 12.9476C33.8047 12.0202 33.9694 11.0997 34.2959 10.2316C34.6033 9.40335 35.0664 8.64165 35.6604 7.98769C36.2804 7.31507 37.0354 6.78088 37.876 6.42003C38.7166 6.05917 39.6238 5.87979 40.5385 5.89359C41.5642 5.89359 42.4788 6.06473 43.2821 6.407C44.0578 6.73143 44.754 7.22015 45.3227 7.8395C45.8983 8.48222 46.3353 9.23672 46.6062 10.0559C46.9111 10.9693 47.0619 11.9272 47.0524 12.8901V13.133C47.0351 13.2129 47.0259 13.2943 47.0249 13.376C47.0072 13.4467 46.9983 13.5193 46.9981 13.5922H36.8103C36.8481 14.1675 37.0044 14.7288 37.2694 15.2409C37.5017 15.6851 37.8183 16.0798 38.2015 16.4029C38.5639 16.7056 38.9816 16.935 39.4315 17.0783C39.8589 17.2192 40.3056 17.2921 40.7555 17.2945C41.6193 17.2945 42.3311 17.0875 42.8909 16.6734C43.449 16.2587 43.9173 15.7354 44.2676 15.1348L46.837 16.4054ZM44.0522 11.2973C44.0045 10.986 43.9183 10.6819 43.7955 10.3919C43.6524 10.0474 43.4411 9.73528 43.1744 9.47445C42.8604 9.17221 42.4941 8.92964 42.0933 8.7586C41.6522 8.56048 41.1164 8.46141 40.4859 8.46141C39.6221 8.46141 38.8787 8.71811 38.2557 9.23152C37.6328 9.74492 37.2138 10.4335 36.999 11.2973H44.0522Z" fill="currentColor"/>
+                        <path d="M49.323 6.32439H52.1572V8.32455H52.3192C52.4896 7.97311 52.7142 7.65066 52.9848 7.36901C53.263 7.07159 53.5817 6.81481 53.9315 6.60619C54.2826 6.39788 54.6541 6.22586 55.0401 6.09279C55.4001 5.96384 55.7792 5.89596 56.1616 5.89197C56.5346 5.88498 56.9069 5.92608 57.2694 6.01424C57.5619 6.09067 57.8435 6.20386 58.1075 6.35111L57.2427 9.08089C57.0308 8.98692 56.8084 8.91894 56.5803 8.87844C56.2903 8.82969 55.9965 8.80692 55.7025 8.81042C55.2391 8.80503 54.7808 8.90761 54.3639 9.11004C53.9584 9.30937 53.5958 9.58611 53.2966 9.92468C52.9822 10.2826 52.7393 10.6974 52.5807 11.1466C52.408 11.6257 52.3211 12.1315 52.324 12.6407V19.5676H49.3279L49.323 6.32439Z" fill="currentColor"/>
+                    </svg>                        
+                </a>
+                <div class="header__nav-content nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#site-header">Bosh Sahifa</a>
+                        </li> 
+                        <li class="nav__item">
+                            <a class="nav__link" href="#hero">Xizmatlar</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#xizmat">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#ish">Jamoa</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#form">Blog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#footer">Kontaktlar</a>
+                        </li>
+                    </ul>
+                    <a class="nav__phone-link" href="+998909213711">+998 90 921 37 11</a>
+                    <button class="header-mode-btn">
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 2.75C17.5858 2.75 17.25 2.41421 17.25 2C17.25 1.58579 17.5858 1.25 18 1.25H22C22.3034 1.25 22.5768 1.43273 22.6929 1.71299C22.809 1.99324 22.7449 2.31583 22.5304 2.53033L19.8107 5.25H22C22.4142 5.25 22.75 5.58579 22.75 6C22.75 6.41421 22.4142 6.75 22 6.75H18C17.6967 6.75 17.4232 6.56727 17.3071 6.28701C17.191 6.00676 17.2552 5.68417 17.4697 5.46967L20.1894 2.75H18ZM13.5 8.75C13.0858 8.75 12.75 8.41421 12.75 8C12.75 7.58579 13.0858 7.25 13.5 7.25H16.5C16.8034 7.25 17.0768 7.43273 17.1929 7.71299C17.309 7.99324 17.2449 8.31583 17.0304 8.53033L15.3107 10.25H16.5C16.9142 10.25 17.25 10.5858 17.25 11C17.25 11.4142 16.9142 11.75 16.5 11.75H13.5C13.1967 11.75 12.9232 11.5673 12.8071 11.287C12.691 11.0068 12.7552 10.6842 12.9697 10.4697L14.6894 8.75H13.5Z" fill="currentColor"/>
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="site-main">
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero__content-wrapper">
+                        <h1 class="hero__title">Biznesingizni keyingi bosqichga
+                            olib chiqing</h1>
+                            <p class="hero__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+                            <button class="hero__consultation-btn">Xizmatlar bilan tanishish</button>
+                        </div> 
+                        <iframe class="hero__gadzhi" width="450" height="258" src="https://www.youtube.com/embed/4hE9TiqfAnc?si=j90pgHteTvnOG-Kf&amp;start=0" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <section id="xizmat" class="xizmat-section">
+                <div class="container">
+                    <h2 class="xizmat__title">Xizmatlar</h2>
+                    <p class="xizmat__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+                    <ul class="xizmat__list">
+                        <li class="xizmat__item">
+                            <img class="xizmat__img" src="./images/website-illustration.png" alt="Business Img" width="202px" height="130px">
+                            <h3 class="xizmat__item-title">Vebsayt tuzish</h3>
+                            <p class="xizmat__item-text">lorem ipsum</p>
+                        </li>
+                        <li class="xizmat__item">
+                            <img class="xizmat__img" src="./images/bot-illustration.png" alt="Business Img" width="222" height="130">
+                            <h3 class="xizmat__item-title">Telegram bot</h3>
+                            <p class="xizmat__item-text">lorem ipsum</p>
+                        </li>
+                        <li class="xizmat__item">
+                            <img class="xizmat__img" src="./images/smm-illustration.png" alt="Business Img" width="176" height="130">
+                            <h3 class="xizmat__item-title">SMM</h3>
+                            <p class="xizmat__item-text">lorem ipsum</p>
+                        </li>
+                        <li class="xizmat__item">
+                            <img class="xizmat__img" src="./images/design-illustration.png" alt="Business Img" width="178" height="130">
+                            <h3 class="xizmat__item-title">Grafik dizayn</h3>
+                            <p class="xizmat__item-text">lorem ipsum</p>
+                        </li>
+                        <li class="xizmat__item">
+                            <img class="xizmat__img" src="./images/crm-illustration.png" alt="Business Img" width="169" height="130">
+                            <h3 class="xizmat__item-title">CRM tizimlar</h3>
+                            <p class="xizmat__item-text">lorem ipsum</p>
+                        </li>
+                    </ul>
+                    <a class="xizmat__buyurtma-link" href="#">Buyurtma berish</a> 
+                </div>
+            </section>
+            <section id="ish" class="ish-section">
+                <div class="container">
+                    <h2 class="ish__title">Biz qanday ishlaymiz?</h2>
+                    <div class="ish__title-wrapper">
+                        <p class="ish__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p> 
+                    </div>
+                    <div class="ish">
+                        <img src="./images/step-illlustration-img.png" alt="Illustration Img" width="300" height="278">
+                        <div class="ish__text-wrapper">
+                            <h3 class="ish__title-wrap">Talablarni aniqlab chiqamiz</h3>
+                            <p class="ish__text-wrap">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis</p>
+                        </div>
+                    </div>
+                    <div class="ish">
+                        <div class="ish__text-wrapper">
+                            <h3 class="ish__title-wrap">Talablarni aniqlab chiqamiz</h3>
+                            <p class="ish__text-wrap">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis</p>
+                        </div>
+                        <img src="./images/step-illlustration-2.png" alt="Illustration Img" width="300" height="224">
+                    </div>
+                    <div class="ish">
+                        <img src="./images/step-illustration-3.png" alt="Illustration Img" width="300" height="258">
+                        <div class="ish__text-wrapper">
+                            <h3 class="ish__title-wrap">Talablarni aniqlab chiqamiz</h3>
+                            <p class="ish__text-wrap">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis</p>
+                        </div>
+                    </div>
+                    <div class="ish">
+                        <div class="ish__text-wrapper">
+                            <h3 class="ish__title-wrap">Talablarni aniqlab chiqamiz</h3>
+                            <p class="ish__text-wrap">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis</p>
+                        </div>
+                        <img src="./images/step-illustration-4.png" alt="Illustration Img" width="300" height="171">
+                    </div>
+                    <div class="ish">
+                        <img src="./images/step-illustration-5.png" alt="Illustration Img" width="300" height="252">
+                        <div class="ish__text-wrapper">
+                            <h3 class="ish__title-wrap">Talablarni aniqlab chiqamiz</h3>
+                            <p class="ish__text-wrap">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis</p>
+                        </div>
+                    </div>
+                    <a class="ish__link" href="#">Buyurtma berish</a>
+                </div>
+            </section>
+            <section id="form" class="form-section">
+                <div class="container">
+                    <h2 class="form__title">Buyurtma berish</h2>
+                    <div class="form__text-wrapper">
+                        <p class="form__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+                    </div>
+                    <form class="el__form" action="https://echo.htmlacademy.ru" method="post">
+                        <input class="form__input" type="text" name="user_name" placeholder="Enter Your Name" autocomplete="off" required aria-label="enter your name">
+                        <input class="form__input" type="tel" name="user_phone number" placeholder="Enter Your Phone Number" autocomplete="off" required aria-label="enter your phone number">
+                        <select class="form__input form__input---arrow" name="user-choose" id="">
+                            <option value="introduction">Bosh sahifa</option>
+                            <option value="services">Xizmatlar</option>
+                            <option value="portfolio">Portfolio</option>
+                            <option value="taem">Jamoa</option>
+                            <option value="blog">Blog</option>
+                            <option value="contacts">Kontaktlar</option>
+                        </select>
+                        <button class="form__button" type="submit">Buyurtma berish</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="site-footer">z
+            <div class="container">
+                <div class="footer">
+                    <div class="copywrite__wrapper">
+                        <h2 class="copywrite__title">Copyright 2020</h2>
+                        <p class="copywrite__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar tincidunt.</p>
+                    </div>
+                    <div class="sayt__wrapper">
+                        <strong class="sayt__title">Sayt sahifalari</strong>
+                        <ul class="sayt__list">
+                            <li class="sayt__item">
+                                <a class="sayt__links" href="#">Bosh Sahifa</a>
+                            </li>
+                            <li class="sayt__item">
+                                <a class="sayt__links" href="#">Xizmatlar</a>
+                            </li>
+                            <li class="sayt__item">
+                                <a class="sayt__links" href="#">Portfolio</a>
+                            </li>
+                            <li class="sayt__item">
+                                <a class="sayt__links" href="#">Jamoa</a>
+                            </li>
+                            <li class="sayt__item">
+                                <a class="sayt__links" href="#">Blog</a>
+                            </li>
+                            <li class="sayt__item">
+                                <a class="sayt__links" href="#">Kontaktlar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="net__wrapper">
+                        <strong class="net__strong">Biz internetda</strong>
+                        <a style="display: flex;align-items: center;gap: 10px;" href="#">
+                            <svg class="net__img" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_14_1998)">
+                                    <path d="M11 0.375C4.92339 0.375 0 5.57812 0 12C0 18.4219 4.92339 23.625 11 23.625C17.0766 23.625 22 18.4219 22 12C22 5.57812 17.0766 0.375 11 0.375ZM16.4024 8.33906L14.5972 17.3297C14.4641 17.9672 14.1048 18.1219 13.6036 17.8219L10.8536 15.6797L9.52742 17.0297C9.38105 17.1844 9.25686 17.3156 8.97298 17.3156L9.16815 14.3578L14.2645 9.49219C14.4863 9.28594 14.2157 9.16875 13.923 9.375L7.6246 13.5656L4.91008 12.6703C4.32016 12.4734 4.30685 12.0469 5.03427 11.7469L15.6395 7.425C16.1319 7.2375 16.5621 7.55156 16.4024 8.33906Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_14_1998">
+                                        <rect width="22" height="24" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>                                
+                            <span class="net__span">Telegram</span>
+                            <a style="display: flex;align-items: center;gap: 10px;" href="#">
+                                <svg class="net__img" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_14_2000)">
+                                        <path d="M21.6562 12C21.6562 5.57812 16.8867 0.375 11 0.375C5.11328 0.375 0.34375 5.57812 0.34375 12C0.34375 17.8022 4.24059 22.6116 9.33496 23.4844V15.3605H6.62793V12H9.33496V9.43875C9.33496 6.52547 10.9248 4.91625 13.3598 4.91625C14.526 4.91625 15.7455 5.14313 15.7455 5.14313V8.0025H14.4014C13.078 8.0025 12.665 8.89875 12.665 9.81797V12H15.6204L15.1478 15.3605H12.665V23.4844C17.7594 22.6116 21.6562 17.8022 21.6562 12Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_14_2000">
+                                            <rect width="22" height="24" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
+                                <span class="net__span">Facebook</span>
+                                <a style="display: flex;align-items: center;gap: 10px;" href="#">
+                                    <svg class="net__img" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_14_2003)">
+                                            <path d="M11.0049 6.60952C7.88169 6.60952 5.36249 9.01421 5.36249 11.9955C5.36249 14.9767 7.88169 17.3814 11.0049 17.3814C14.1281 17.3814 16.6473 14.9767 16.6473 11.9955C16.6473 9.01421 14.1281 6.60952 11.0049 6.60952ZM11.0049 15.497C8.9866 15.497 7.3366 13.9267 7.3366 11.9955C7.3366 10.0642 8.98169 8.4939 11.0049 8.4939C13.0281 8.4939 14.6732 10.0642 14.6732 11.9955C14.6732 13.9267 13.0232 15.497 11.0049 15.497ZM18.1942 6.38921C18.1942 7.08765 17.6049 7.64546 16.8781 7.64546C16.1464 7.64546 15.562 7.08296 15.562 6.38921C15.562 5.69546 16.1513 5.13296 16.8781 5.13296C17.6049 5.13296 18.1942 5.69546 18.1942 6.38921ZM21.9312 7.66421C21.8477 5.9814 21.4451 4.49077 20.1536 3.26265C18.8669 2.03452 17.3053 1.65015 15.5424 1.56577C13.7254 1.46733 8.27946 1.46733 6.46249 1.56577C4.70446 1.64546 3.14285 2.02983 1.85134 3.25796C0.559819 4.48608 0.162051 5.97671 0.0736587 7.65952C-0.0294662 9.3939 -0.0294662 14.5923 0.0736587 16.3267C0.157141 18.0095 0.559819 19.5001 1.85134 20.7283C3.14285 21.9564 4.69955 22.3408 6.46249 22.4251C8.27946 22.5236 13.7254 22.5236 15.5424 22.4251C17.3053 22.3455 18.8669 21.9611 20.1536 20.7283C21.4402 19.5001 21.8428 18.0095 21.9312 16.3267C22.0344 14.5923 22.0344 9.39858 21.9312 7.66421ZM19.5839 18.1876C19.2009 19.1064 18.4594 19.8142 17.4919 20.1845C16.0433 20.733 12.6058 20.6064 11.0049 20.6064C9.40401 20.6064 5.9616 20.7283 4.51785 20.1845C3.55535 19.8189 2.81384 19.1111 2.42589 18.1876C1.85134 16.8048 1.98393 13.5236 1.98393 11.9955C1.98393 10.4673 1.85625 7.1814 2.42589 5.80327C2.80892 4.88452 3.55044 4.17671 4.51785 3.8064C5.96651 3.25796 9.40401 3.38452 11.0049 3.38452C12.6058 3.38452 16.0482 3.26265 17.4919 3.8064C18.4544 4.17202 19.196 4.87983 19.5839 5.80327C20.1585 7.18608 20.0259 10.4673 20.0259 11.9955C20.0259 13.5236 20.1585 16.8095 19.5839 18.1876Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_14_2003">
+                                                <rect width="22" height="24" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span class="net__span">Instagram</span>
+                                </a>
+                            </div> 
+                        </div>  
+                    </div>
+                </footer>
+                
+                <script src="./js/main.js"></script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                    AOS.init();
+                </script>
+            </body>
+            </html>
